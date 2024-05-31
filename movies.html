@@ -6,7 +6,7 @@
     <title>Proyecto Codoacodo Java</title>
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
-    <script src="js/api.js"></script>
+    <script src="js/validarUser.js"></script>
 </head>
 <body>
     
@@ -19,9 +19,13 @@
         </div>
 
         <div class="btnSection"> 
-            <button>Tendencias</button>
-            <button href="./src/register.html" id="register">Registrarse</button> 
-            <button href="./src/register.html" id="login">Iniciar Sesión</button> 
+            <button>
+                <a href="#trending">Tendencias</a>
+            </button>
+            <button id="register">
+                <a href="index.html">Cerrar Sesión</a>
+            </button>
+            <div id="user"></div> 
         </div>
     </div>
     
@@ -44,15 +48,15 @@
     <hr>
     <br>
     <section class="movieSection">
-        <h2 class="trending">Las tendencias de hoy</h2>
-        <div class="container">
-            <div class="card__container">
+        <h2 class="trending" >Las tendencias de hoy</h2>
+        <div class="container" id="trending">
+            <div class="card__container"> 
                     <img src="./img/haine.jpg" alt="image" class="card__img">
                 </div>
                 <div class="card__container">
                     <img src="./img/psycho.jpg" alt="image" class="card__img">
                 </div>
-                <div class="card__container">
+                <div class="card__container" >
                     <img src="./img/radiohead.jpg" alt="image" class="card__img">
                 </div>
                 <div class="card__container">

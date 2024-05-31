@@ -88,6 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		} else {
 			event.preventDefault();
 			console.log("El formulario es valido");
+			window.location.href = "login.html";
 		}
 	})
 
