@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
+    text-decoration: none;
 }
 
 body{
@@ -29,6 +30,10 @@ body{
 #signup{
     margin-top: 10px;
     margin-left: -10px;
+}
+a{
+    text-decoration: none;
+    color: white;
 }
 a:-webkit-any-link {
     text-decoration: none;

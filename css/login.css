@@ -20,6 +20,10 @@ a{
   text-decoration: none;
   color: white;
 }
+a:-webkit-any-link {
+  text-decoration: none;
+  color: white;
+}
 .container {
   max-width: 500px;
   width: 100%;
