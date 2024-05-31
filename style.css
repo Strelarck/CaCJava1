@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    background-color: #181419;
+    color: white;
+}
+
+/* HEADER */
+
+.topNav{
+    background-color: #9f3647;
+    color: #ffff;
+    height: 10vh;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+}
+#login{
+    background-color: black;
+}
+#signup{
+    margin-top: 10px;
+    margin-left: -10px;
+}
+.logo{
+    align-items: center;
+    margin-left: 40px;
+    margin-left: 10px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    font-family: 'Nunito', sans-serif;
+    width: 220px;
+    height: 100px;
+    padding: 23px;
+    cursor: pointer;
+    }
+
+.logo:hover{
+    animation: logoAnim 2s infinite;
+}
+.btnSection{ 
+    align-items: center;
+    margin-right: 40px;
+    padding: 1.5rem 0;
+}       
+
+button{
+    background-color: #9f3647;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: white;
+    letter-spacing: 0.8px;
+    padding: 0.5rem 1rem;
+    margin-right: 10px;
+    margin-top: -5px;
+    border: 1px solid #9f3647 ;
+    cursor: pointer;
+    border-radius: 7px;   
+}
+
+button:hover{
+    animation: btnAnim 10s;
+}
+
+.textBanner{
+    margin-top: -7%;
+    width: 100%;
+    height: 110vh;
+    font-size: 40px;
+    background-image: linear-gradient(to right top, #0000008a, #00000060), url(../img/banner-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.searchEngine{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    padding: 20vh;
+}
+
+.search{
+    padding: 15px;
+    border-radius: 25px;
+}
+
+.movieSection{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 3vh;
+}
+
+.container {
+  display: flex;
+  place-items: center;
+  margin-inline: 5rem;
+  padding-block: 5rem;
+
+}
+
+.card__article {
+  position: relative;
+  overflow: hidden;
+}
+
+.card__img {
+  width: 300px;
+  border-radius: 1rem;
+  height: 100%;
+  max-width: 70%;
+}
+
+
+.footer{
+    display: flex;
+    background-color: #9f3647;
+    bottom: 0;
+    width: 100%;
+    padding: 50px;
+    height: 100px;
+}
+hr{
+    border-color: #9f3647;
+}
+.footerName{
+    text-align: right;
+}
+
+@keyframes btnAnim {
+    0% {
+        box-shadow:0px 0px 10px rgba(0, 0, 0, 0.3);
+    }
+    1% {
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    }
+    100% {
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    }
+}
+
+@keyframes logoAnim {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    20%{
+        transform: rotate(20deg);
+    }
+
+    40%{ 
+        transform: rotate(-30deg);
+    }
+
+    60%{
+        transform: rotate(80deg);
+    }
+
+    90%{ 
+        transform: rotate(-360deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
