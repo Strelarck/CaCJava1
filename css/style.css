@@ -30,7 +30,7 @@ body{
     margin-top: 10px;
     margin-left: -10px;
 }
-a -webkit-{
+a:-webkit-any-link {
     text-decoration: none;
     color: white;
 }
